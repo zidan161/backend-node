@@ -1,10 +1,10 @@
-import express from 'express';
+var express = require('express');
 var app = express();
 
-const path = __dirname + "/views/index.html"
+var path = __dirname + '/views/index.html'
 
 app.get('/', function(req, res) {
     res.sendFile(path);
 })
 
-export default app;
+module.exports = app;
